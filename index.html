@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Arty Randomizer</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>arty randomizer</h1>
+            <h2>an attempt</h2>
+        </header>
+        <main>
+            <div class="suggestion-box" style="height:100px;">
+                <p id="result">
+                    <!-- stuff will display here -->
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="chooseRandomly()">give me a suggestion!</button>
+            </div>
+            <!-- <div class="options">
+                <label for="one"> <input type="checkbox" id="one" name="level" value="one"/> basic </label>
+                <label for="two"> <input type="checkbox" id="two" name="level" value="two" /> intermediate </label>
+                <label for="three"> <input type="checkbox" id="three" name="level" value="three" /> advanced </label>
+              </div> -->
+            <div class="options">
+                <button id="one" class="level" data-status=true>basic</button>
+                <button id="two" class="level" data-status=false> intermediate</button>
+                <button id="three" class="level" data-status=false> advanced</button>
+            </div>
+        </main>
+        <footer>made with love and notepad++</footer>
+    </div>
+</body>
+
+</html>

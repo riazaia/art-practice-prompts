@@ -1,0 +1,7 @@
+[data-status=true] {
+  background-color: hsl(54, 100%, 62%);
+}
+
+[data-status=false] {
+  background-color: hsl(54, 10%, 62%);
+}
