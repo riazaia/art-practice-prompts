@@ -1,9 +1,19 @@
-let uno = ["one", 1, 11, 111];
-let dos = ["two", 2, 22, 222];
-let tres = ["three", 3, 33, 333];
-
-let ogArr = [...uno, ...dos, ...tres];
-console.log(ogArr);
+let uno = [
+  "line weight",
+  "shape and form construction",
+  "composition",
+  "values and light",
+  "depth and perspective",
+];
+let dos = [
+  "materials and textures",
+  "clothes and drapery",
+  "scenery and background",
+  "human anatomy",
+  "animal anatomy",
+];
+let tres = ["character design", "environments"];
+let arr;
 
 let firstBtn = document.querySelector("#one").getAttribute("data-status");
 let secondBtn = document.querySelector("#two").getAttribute("data-status");
@@ -52,37 +62,34 @@ function chooseRandomly() {
 }
 
 function buildOptionPool() {
-  arr = ogArr;
+  arr = [...uno, ...dos, ...tres];
   let btnValues = `${firstBtn}, ${secondBtn}, ${thirdBtn}`;
-  console.log(btnValues);
   let nopes = [];
 
-  if (btnValues == "true, true, true") {
-    arr = ogArr;
-  } else {
-    switch (btnValues) {
-      case "true, false, false":
-        nopes = [...dos, ...tres];
-        break;
-      case "false, true, false":
-        nopes = [...uno, ...tres];
-        break;
-      case "false, false, true":
-        nopes = [...uno, ...dos];
-        break;
-      case "true, true, false":
-        nopes = [...tres];
-        break;
-      case "true, false, true":
-        nopes = [...dos];
-        break;
-      case "false, true, true":
-        nopes = [...uno];
-        break;
+  switch (btnValues) {
+    case "true, true, true":
+      break;
+    case "true, false, false":
+      nopes = [...dos, ...tres];
+      break;
+    case "false, true, false":
+      nopes = [...uno, ...tres];
+      break;
+    case "false, false, true":
+      nopes = [...uno, ...dos];
+      break;
+    case "true, true, false":
+      nopes = [...tres];
+      break;
+    case "true, false, true":
+      nopes = [...dos];
+      break;
+    case "false, true, true":
+      nopes = [...uno];
+      break;
 
-      default:
-        alert("You must select an option!");
-    }
+    default:
+      alert("You must select an option!");
   }
 
   arr = arr.filter((word) => {
