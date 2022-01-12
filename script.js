@@ -54,9 +54,6 @@ third.addEventListener("click", () => {
 
 function chooseRandomly() {
   buildOptionPool();
-  console.log(firstBtn);
-  console.log(secondBtn);
-  console.log(thirdBtn);
   var randomNumber = Math.floor(Math.random() * arr.length);
   document.getElementById("result").textContent = arr[randomNumber];
 }
