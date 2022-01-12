@@ -15,40 +15,40 @@ let dos = [
 let tres = ["character design", "environments"];
 let arr;
 
-let firstBtn = document.querySelector("#one").getAttribute("data-status");
-let secondBtn = document.querySelector("#two").getAttribute("data-status");
-let thirdBtn = document.querySelector("#three").getAttribute("data-status");
+let firstBtnStatus = document.querySelector("#one").getAttribute("data-status");
+let secondBtnStatus = document.querySelector("#two").getAttribute("data-status");
+let thirdBtnStatus = document.querySelector("#three").getAttribute("data-status");
 
 const first = document.querySelector("#one");
 first.addEventListener("click", () => {
-  if (firstBtn == false) {
+  if (firstBtnStatus == false) {
     first.setAttribute("data-status", true);
-    firstBtn = true;
+    firstBtnStatus = true;
   } else {
     first.setAttribute("data-status", false);
-    firstBtn = false;
+    firstBtnStatus = false;
   }
 });
 
 const second = document.querySelector("#two");
 second.addEventListener("click", () => {
-  if (secondBtn == false) {
+  if (secondBtnStatus == false) {
     second.setAttribute("data-status", true);
-    secondBtn = true;
+    secondBtnStatus = true;
   } else {
     second.setAttribute("data-status", false);
-    secondBtn = false;
+    secondBtnStatus = false;
   }
 });
 
 const third = document.querySelector("#three");
 third.addEventListener("click", () => {
-  if (thirdBtn == false) {
+  if (thirdBtnStatus == false) {
     third.setAttribute("data-status", true);
-    thirdBtn = true;
+    thirdBtnStatus = true;
   } else {
     third.setAttribute("data-status", false);
-    thirdBtn = false;
+    thirdBtnStatus = false;
   }
 });
 
@@ -60,7 +60,7 @@ function chooseRandomly() {
 
 function buildOptionPool() {
   arr = [...uno, ...dos, ...tres];
-  let btnValues = `${firstBtn}, ${secondBtn}, ${thirdBtn}`;
+  let btnValues = `${firstBtnStatus}, ${secondBtnStatus}, ${thirdBtnStatus}`;
   let nopes = [];
 
   switch (btnValues) {
