@@ -10,7 +10,6 @@
     <title>Arty Randomizer</title>
 </head>
 
-<body>
     <div class="container">
         <header>
             <h1>arty randomizer</h1>
@@ -26,12 +25,14 @@
                 <button onclick="chooseRandomly()">give me a suggestion!</button>
             </div>
             <div class="options">
-                <button id="one" class="level" data-status=true>⭐️ fundamentals</button>
-                <button id="two" class="level" data-status=false>⭐️⭐️ intermediate</button>
-                <button id="three" class="level" data-status=false>⭐️⭐️⭐️ advanced</button>
+                
+                <label for="uno"><input type="checkbox" id="uno" id="option" data-status=true> ⭐️ fundamentals</label>
+                <label for="dos"><input type="checkbox" id="dos" name="option" data-status=false> ⭐️⭐️ intermediate</label>
+                <label for="tres"><input type="checkbox" id="tres" name="option" data-status=false> ⭐️⭐️⭐️ advanced</label>
+                
             </div>
         </main>
-        <footer>made with love and notepad++</footer>
+        <footer><p>made with love and <del>notepad++</del> VSCode my beau</p></footer>
     </div>
 </body>
 
