@@ -1,0 +1,113 @@
+{
+	"I": [
+		"line weight",
+		"shape and form construction",
+		"composition",
+		"values and light",
+		"depth and perspective"
+	],
+	"II": [
+		"materials and textures",
+		"clothes and drapery",
+		"scenery and background",
+		"human anatomy",
+		"animal anatomy"
+	],
+	"III": ["character design", "environments"],
+	"all": [
+		"line dynamics",
+		"shape and form construction",
+		"composition",
+		"gesture and body language",
+		"facial expressions",
+		"materials and textures",
+		"clothes and drapery",
+		"scenery and background",
+		"character design",
+		"environments",
+		"animation",
+		"human anatomy",
+		"animal anatomy",
+		"values and light",
+		"depth and perspective",
+		"color theory",
+		"abstraction",
+		"architecture",
+		"reflective materials",
+		"armour",
+		"book covers",
+		"mecha",
+		"creature",
+		"critter",
+		"edges",
+		"figure drawing",
+		"foliage",
+		"flowers",
+		"canines",
+		"industrial design",
+		"typography",
+		"muscles",
+		"negative space",
+		"portrait",
+		"realism",
+		"pixel art",
+		"cell shading",
+		"screencap",
+		"silhouettes",
+		"still life",
+		"thumbnailing",
+		"urban sketching",
+		"breasts",
+		"line",
+		"form",
+		"depth",
+		"value",
+		"color",
+		"composition"
+	],
+
+	"fundamentals": ["line", "form", "depth", "value", "color", "composition"],
+
+	"medium": ["traditional", "digital"],
+
+	"traditional": [
+		"graphite",
+		"mixed media",
+		"color pencils",
+		"watercolor",
+		"pastels",
+
+		"acrylics",
+		"oil painting",
+		"charcoal",
+		"collage",
+		"stamping"
+	],
+
+	"digital": ["3d", "pixel", "cell-shading", "semi-realism", "realism"],
+
+	"humanAnatomy": [
+		"hair",
+		"head",
+		"eyes",
+		"nose",
+		"ears",
+		"mouth",
+
+		"shoulders",
+		"torso",
+		"arms",
+		"hands",
+		"butt",
+		"legs",
+		"feet"
+	],
+
+	"typeOfPortrait": ["bust", "half-body", "full-body"],
+
+	"biologicalStudies": ["plantsAndFungi", "animals"],
+
+	"plantsAndFungi": [],
+
+	"animals": ["amphibians", "birds", "fish", "mammals", "reptiles"]
+}
